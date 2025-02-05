@@ -1,0 +1,66 @@
+<!-- 
+    Title: WebForm_submitted.html 
+    Author: Veronica Hutchins 
+    Date: 4/22/2023 
+    Note: assignment 10 - post-submission 
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Join Our Email List - Class Assignment</title>
+	<link rel="stylesheet" href="styles/webform_style.css">
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+	<!-- <script>
+		//<![CDATA[
+		var decode = function ( text ) {
+			text = text.replace(/\+/g, " ");
+			text = text.replace(/%[a-fA-F0-9]{2}/g,
+				function ( text ) {
+					return String.fromCharCode( "0x" + text.substr(1,2));
+				}
+			);
+			return text;
+		}
+	
+		var display_data = function () {
+			var url_parts = window.location.toString().split("?");
+			if ( url_parts.length != 2 ) return;
+	
+			var fields = url_parts[1].split("&");
+	
+			if ( fields.length == 0 ) {
+				document.write("<p>No data was submitted.</p>");
+			} else {
+				document.write("<dl>");
+				var field_parts;
+				for ( var i in fields ) {
+					field_parts = fields[i].split("=");
+					field_parts[0] = decode( field_parts[0] );
+					field_parts[1] = decode( field_parts[1] );
+					document.write("<dt>" + field_parts[0] + "</dt>");
+					document.write("<dd>" + field_parts[1] + "</dd>");
+				}
+				document.write("</dl>");
+			}
+		}
+		//]]>
+		</script> -->
+</head>
+
+<body>
+	<section id="content">
+	    <h1>Thanks for joining!</h1>
+	    <h4 id="data">Your registration has been submitted with the following data:</h4>        
+
+	    <!-- <script type="text/javascript">display_data();</script> -->
+		<script src="scripts/WebForm_submitted.js"></script>
+
+	</section>
+
+	<div id="homelink"> 
+		Return to my homepage here: <a href="index.html">Veronica Hutchins' homepage</a>              
+	</div>
+
+</body>
+</html>
